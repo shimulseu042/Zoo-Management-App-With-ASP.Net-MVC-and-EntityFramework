@@ -50,9 +50,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Animal.cs" />
-    <Compile Include="Migrations\201805121051056_Create ZooDb.cs" />
-    <Compile Include="Migrations\201805121051056_Create ZooDb.Designer.cs">
-      <DependentUpon>201805121051056_Create ZooDb.cs</DependentUpon>
+    <Compile Include="Migrations\201805141021190_Create ZooDb.cs" />
+    <Compile Include="Migrations\201805141021190_Create ZooDb.Designer.cs">
+      <DependentUpon>201805141021190_Create ZooDb.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -63,8 +63,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201805121051056_Create ZooDb.resx">
-      <DependentUpon>201805121051056_Create ZooDb.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201805141021190_Create ZooDb.resx">
+      <DependentUpon>201805141021190_Create ZooDb.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

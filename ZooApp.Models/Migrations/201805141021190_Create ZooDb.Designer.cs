@@ -13,7 +13,7 @@ namespace ZooApp.Models.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201805121051056_Create ZooDb"; }
+            get { return "201805141021190_Create ZooDb"; }
         }
         
         string IMigrationMetadata.Source

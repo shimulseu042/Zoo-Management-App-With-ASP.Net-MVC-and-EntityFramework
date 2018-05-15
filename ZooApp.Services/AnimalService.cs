@@ -74,5 +74,11 @@ namespace ZooApp.Services
             Animal deletedAnimal = db.Animals.Find(id);
             return deletedAnimal;
         }
+
+	    public Animal GetAnimalById(int id)
+	    {
+		    Animal animal = db.Animals.Find(id);
+		    return animal;
+	    }
     }
 }
