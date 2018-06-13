@@ -15,13 +15,13 @@ namespace ZooApp.MvcClient.Controllers
         public ActionResult Index()
         {
             
-            var viewAnimals = animalService.GetAllAnimals();
+            var viewAnimals = animalService.GetAll();
             return View(viewAnimals);
         }
 
         public ActionResult Details(int id)
         {
-            var animalById= animalService.DetailsAnimal(id);
+            var animalById= animalService.Get(id);
             return View(animalById);
         }
 
@@ -33,35 +33,39 @@ namespace ZooApp.MvcClient.Controllers
         [HttpPost]
         public ActionResult Create(Animal animal)
         {
-            var saved = animalService.SaveAnimal(animal);
-            return RedirectToAction("Index");
+            if (ModelState.IsValid)
+            {
+                var saved = animalService.Save(animal);
+                return RedirectToAction("Index");
+            }
+            return View(animal);
         }
 
 
         [HttpGet]
         public ActionResult Edit(int id)
         {
-            var editedAnimal = animalService.GetAnimalById(id);
+            var editedAnimal = animalService.GetDbModel(id);
             return View(editedAnimal);
         }
         [HttpPost]
         public ActionResult Edit(Animal animal)
         {
-            var edited = animalService.EditAnimal(animal);
+            var edited = animalService.Update(animal);
             return RedirectToAction("Index");
         }
 
         [HttpGet]
         public ActionResult Delete(int id)
         {
-            var deletedAnimal = animalService.GetAnimalById(id);
+            var deletedAnimal = animalService.GetDbModel(id);
             return View(deletedAnimal);
         }
         [HttpPost]
         public ActionResult Delete(Animal animal)
         {
             
-            var deleted = animalService.DeleteAnimal(animal);
+            var deleted = animalService.Delete(animal);
             return RedirectToAction("Index");
         }
     }

@@ -50,21 +50,39 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Animal.cs" />
-    <Compile Include="Migrations\201805141021190_Create ZooDb.cs" />
-    <Compile Include="Migrations\201805141021190_Create ZooDb.Designer.cs">
-      <DependentUpon>201805141021190_Create ZooDb.cs</DependentUpon>
+    <Compile Include="AnimalFood.cs" />
+    <Compile Include="Food.cs" />
+    <Compile Include="Migrations\201805190544321_AnimalFood.cs" />
+    <Compile Include="Migrations\201805190544321_AnimalFood.Designer.cs">
+      <DependentUpon>201805190544321_AnimalFood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805200511398_AddFoodPrice.cs" />
+    <Compile Include="Migrations\201805200511398_AddFoodPrice.Designer.cs">
+      <DependentUpon>201805200511398_AddFoodPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806101348248_AnimalFoodUniqueNameAdded.cs" />
+    <Compile Include="Migrations\201806101348248_AnimalFoodUniqueNameAdded.Designer.cs">
+      <DependentUpon>201806101348248_AnimalFoodUniqueNameAdded.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ZooContext.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201805141021190_Create ZooDb.resx">
-      <DependentUpon>201805141021190_Create ZooDb.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201805190544321_AnimalFood.resx">
+      <DependentUpon>201805190544321_AnimalFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805200511398_AddFoodPrice.resx">
+      <DependentUpon>201805200511398_AddFoodPrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806101348248_AnimalFoodUniqueNameAdded.resx">
+      <DependentUpon>201806101348248_AnimalFoodUniqueNameAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

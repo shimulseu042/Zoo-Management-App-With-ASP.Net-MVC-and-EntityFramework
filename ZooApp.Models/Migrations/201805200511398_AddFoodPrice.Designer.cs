@@ -7,13 +7,13 @@ namespace ZooApp.Models.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class CreateZooDb : IMigrationMetadata
+    public sealed partial class AddFoodPrice : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(CreateZooDb));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddFoodPrice));
         
         string IMigrationMetadata.Id
         {
-            get { return "201805141021190_Create ZooDb"; }
+            get { return "201805200511398_AddFoodPrice"; }
         }
         
         string IMigrationMetadata.Source
