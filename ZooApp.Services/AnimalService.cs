@@ -19,8 +19,7 @@ namespace ZooApp.Services
             {
                 Id = x.Id,
                 Name = x.Name,
-                Origin = x.Origin,
-                Quantity = x.Quantity
+                Origin = x.Origin
             }).ToList();
             return viewAnimals;
         }
@@ -32,8 +31,7 @@ namespace ZooApp.Services
             {
                 Id = animal.Id,
                 Name = animal.Name,
-                Origin = animal.Origin,
-                Quantity = animal.Quantity
+                Origin = animal.Origin
             };
         }
 
